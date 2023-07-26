@@ -1,0 +1,241 @@
+
+-------------------------------
+24th July Monday
+-------------------------------
+
+
+how to read and write excel ?
+
+
+Apache Poi jars or dependencies 
+
+
+							excels
+							
+							
+			.xls								.xlsx
+
+
+
+			HSSFWorkbook(C)		Workbook(I)        XSSFWorkbook(C)
+			HSSFSheet(C)		Sheet(I)		   XSSFSheet(C)
+			HSSFRow(C)			Row(I)			   XSSFRow(C)
+			HSSFCell(C)			Cell(I)			   XSSFCell(C)
+
+	
+
+FileInputStream(C)
+
+
+java.io
+
+FileInputStream(File)
+FileInputStream(FileDescriptor)
+FileInputStream(String) : here String is the path of file including extension
+
+
+getSheet(String): here string is sheet name
+getSheetAt(int)	: int is index starts from 0		
+							
+							
+		FileInputStream fis=new FileInputStream("D:\\004 Live Tech\\Book1.xlsx");
+		
+		XSSFWorkbook wb=new XSSFWorkbook(fis);
+		
+		XSSFSheet ws=wb.getSheet("Sheet1");
+---------------------------------		
+Methods in Sheet :
+
+
+ws.getLastRowNum():int ==> this will give the index of last row where index starts from 0
+
+ws.getPhysicalNumberOfRows():int ==>this will give the count of rows exclusing empty rows		
+		
+ws.getRow(int):Row  ==> this will focus on Row whose index is given as int 		
+
+---------------------------------		
+Methods in Row :
+
+ws.getRow(1).getLastCellNum():int ==> this will give the index of last cell where index starts from 1
+
+row.getCell(j);Cell ==> this will focus on cell whose index is given as int 		
+
+==============================================================
+Excel Write 
+
+case 1:  modifying an existing cell
+
+case 2: creating a cell in existing row 
+
+case 3: creating a new row and cell in it 
+
+
+-------------------------------
+25th July Tuesday
+-------------------------------
+
+how to read Properties file ?
+
+what is Properties file ?
+
+it's a flat file used to store key value pairs having extension .properties
+
+Properties(C)
+
+java.util
+
+Properties() : we will use default construtor
+Properties(int)
+Properties(Properties)
+
+load(InputStream):void ==> this will tell which is our properties file 
+
+getProperty(String):String ==> here argument is key in String and return is value in string
+
+
+-----------------------------------------
+HashMap
+
+
+Map(I)
+
+java.util
+
+
+Map<K, V> 
+
+Entry<K, V>
+
+methods in Map :
+
+put(K, V):V 
+
+size():int ==> this will return no of keyvalue pairs that means entries count
+
+get(Object):V 
+
+keySet():Set<K> 
+
+values():Collection<V>
+
+entrySet():Set<Entry<K,V>>
+
+containsKey(Object):boolean
+containsValue(Object):boolean
+
+methods in Entry Interface :
+
+
+getKey():K
+getValue():V
+
+
+----------------------------------
+HashMap<K, V>
+
+HashMap(): default construtor will have capacity of 16
+HashMap(int)
+HashMap(int, float)
+HashMap(Map<? extends K, ? extends V>)
+
+------------------------------------
+
+exxamples for HashMap usage
+
+
+String str="Hotel Application has 2 builds";
+
+find no of occurance of each character in this string 
+
+
+
+-------------------------------
+26th July Wednesday
+
+-------------------------------
+
+								Framework 
+
+			unit testing						user-defined	
+			
+		 - TestNG								- Data driven Framework
+												- Keyword driven Framework
+												- Hybrid Framework with POM ( design pattern)
+												- BDD Framework using Cucumber 
+												
+												
+												
+												
+Data driven Framework :
+
+Data present in excel or data base or json file or properties will 
+drive the test scripts
+
+---------------------------------------
+Project Structure :
+
+
+HybridFrameWork  
+
+src/main/java
+src/main/resources
+src/test/java
+	- base
+	- testscripts
+	    - regression
+		- smoke
+	-utils
+	
+src/test/resources
+	- testdata
+		- excels
+		- jsons
+	- properties
+
+Properties
+	- config.properties
+
+
+--------------------------------------
+TestNG annotations
+
+
+@BeforeMethod
+@Test
+@AfterMethod
+
+Hiererchy of Testng.xml 
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="regression.LoginTest"/>
+
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@AfterClass
+@AfterTest
+@AfterSuite
+
+
+reyaz0607		reyaz123		Adactin.com - Search Hotel
+reyaz0607		reyaz456		Adactin.com - Hotel Reservation System
+reyaz1212		reyaz123		Adactin.com - Hotel Reservation System
+reyaz1212		reyaz456		Adactin.com - Hotel Reservation System
+
+
+
+--------------------------------------
+For Data Parameterization 
+
+testng has come up with one more annotation called @DataProvider
+
+
+@DataProvider
+public Object[][] methodName()
+{
+
+
+}
+
