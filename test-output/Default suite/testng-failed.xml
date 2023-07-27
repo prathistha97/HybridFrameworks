@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscripts.regression.ValidateLogin">
+      <class name="testscripts.regression.ValidateLoginUsingDataProviderOrangeHRMExcel2">
         <methods>
           <include name="setUp"/>
+          <include name="teardown"/>
           <include name="fileSetUp"/>
-          <include name="validateLoginTest"/>
+          <include name="validateLoginTest1"/>
         </methods>
-      </class> <!-- testscripts.regression.ValidateLogin -->
+      </class> <!-- testscripts.regression.ValidateLoginUsingDataProviderOrangeHRMExcel2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
