@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscripts.regression.ValidateLoginUsingDataProviderOrangeHRMExcel2">
+      <class name="testscripts.smoke.ValidateRegistration">
         <methods>
           <include name="setUp"/>
+          <include name="validateRegistrationTest"/>
           <include name="teardown"/>
           <include name="fileSetUp"/>
-          <include name="validateLoginTest1"/>
         </methods>
-      </class> <!-- testscripts.regression.ValidateLoginUsingDataProviderOrangeHRMExcel2 -->
+      </class> <!-- testscripts.smoke.ValidateRegistration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

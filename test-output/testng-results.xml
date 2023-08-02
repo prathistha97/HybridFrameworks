@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-27T12:49:38 IST" name="Default suite" finished-at="2023-07-27T12:49:57 IST" duration-ms="19085">
+  <suite started-at="2023-07-28T12:08:01 IST" name="Default suite" finished-at="2023-07-28T12:08:11 IST" duration-ms="10459">
     <groups>
     </groups>
-    <test started-at="2023-07-27T12:49:38 IST" name="Default test" finished-at="2023-07-27T12:49:57 IST" duration-ms="19085">
-      <class name="testscripts.regression.ValidateLoginUsingDataProviderOrangeHRMExcel2">
-        <test-method is-config="true" signature="fileSetUp()[pri:0, instance:testscripts.regression.ValidateLoginUsingDataProviderOrangeHRMExcel2@18df8434]" started-at="2023-07-27T12:49:38 IST" name="fileSetUp" finished-at="2023-07-27T12:49:38 IST" duration-ms="31" status="PASS">
+    <test started-at="2023-07-28T12:08:01 IST" name="Default test" finished-at="2023-07-28T12:08:11 IST" duration-ms="10459">
+      <class name="testscripts.smoke.ValidateRegistrationDataProvider">
+        <test-method is-config="true" signature="fileSetUp()[pri:0, instance:testscripts.smoke.ValidateRegistrationDataProvider@18df8434]" started-at="2023-07-28T12:08:01 IST" name="fileSetUp" finished-at="2023-07-28T12:08:01 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fileSetUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testscripts.regression.ValidateLoginUsingDataProviderOrangeHRMExcel2@18df8434]" started-at="2023-07-27T12:49:39 IST" name="setUp" finished-at="2023-07-27T12:49:49 IST" duration-ms="9262" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testscripts.smoke.ValidateRegistrationDataProvider@18df8434]" started-at="2023-07-28T12:08:02 IST" name="setUp" finished-at="2023-07-28T12:08:06 IST" duration-ms="4505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateLoginTest1(java.util.HashMap)[pri:0, instance:testscripts.regression.ValidateLoginUsingDataProviderOrangeHRMExcel2@18df8434]" started-at="2023-07-27T12:49:49 IST" name="validateLoginTest1" data-provider="getData" finished-at="2023-07-27T12:49:54 IST" duration-ms="5242" status="PASS">
+        <test-method signature="validateRegistrationTest(java.util.HashMap)[pri:0, instance:testscripts.smoke.ValidateRegistrationDataProvider@18df8434]" started-at="2023-07-28T12:08:06 IST" name="validateRegistrationTest" data-provider="getData" finished-at="2023-07-28T12:08:08 IST" duration-ms="1403" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=admin123, https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index=https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index, admin123=admin123, admin=admin, username=admin, Expected URL=https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index}]]>
+                <![CDATA[{Ravi123=Ravi123, Captcha Text=marbly, ravi12@gmail.com=ravi12@gmail.com, Confirm Password=Ravi123, Adactin.com - New User Registration=Adactin.com - New User Registration, Full Name=Ravi Kumar, Expected Title=Adactin.com - New User Registration, Username=Ravi1805, Ravi Kumar=Ravi Kumar, Ravi1805=Ravi1805, marbly=marbly, Password=Ravi123, Email Address=ravi12@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLoginTest1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testscripts.regression.ValidateLoginUsingDataProviderOrangeHRMExcel2@18df8434]" started-at="2023-07-27T12:49:54 IST" name="teardown" finished-at="2023-07-27T12:49:57 IST" duration-ms="3263" status="PASS">
+        </test-method> <!-- validateRegistrationTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testscripts.smoke.ValidateRegistrationDataProvider@18df8434]" started-at="2023-07-28T12:08:08 IST" name="teardown" finished-at="2023-07-28T12:08:11 IST" duration-ms="3326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testscripts.regression.ValidateLoginUsingDataProviderOrangeHRMExcel2 -->
+      </class> <!-- testscripts.smoke.ValidateRegistrationDataProvider -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

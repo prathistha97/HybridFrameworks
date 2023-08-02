@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-02T11:47:30 IST" name="Suite" finished-at="2023-08-02T11:48:03 IST" duration-ms="33734">
+    <groups>
+    </groups>
+    <test started-at="2023-08-02T11:47:30 IST" name="Test" finished-at="2023-08-02T11:48:03 IST" duration-ms="33734">
+      <class name="testscripts.smoke.ValidateLogoutHybrid">
+        <test-method is-config="true" signature="fileSetUp()[pri:0, instance:testscripts.smoke.ValidateLogoutHybrid@2cb4893b]" started-at="2023-08-02T11:47:30 IST" name="fileSetUp" finished-at="2023-08-02T11:47:30 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileSetUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testscripts.smoke.ValidateLogoutHybrid@2cb4893b]" started-at="2023-08-02T11:47:32 IST" name="setUp" finished-at="2023-08-02T11:47:41 IST" duration-ms="9256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateLogoutTest(java.util.HashMap)[pri:0, instance:testscripts.smoke.ValidateLogoutHybrid@2cb4893b]" started-at="2023-08-02T11:47:41 IST" name="validateLogoutTest" data-provider="getData" finished-at="2023-08-02T11:48:00 IST" duration-ms="19522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{https://opensource-demo.orangehrmlive.com/web/index.php/auth/login=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login, password=admin123, https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index=https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index, Expected URL1=https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index, admin123=admin123, Expected URL2=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login, admin=admin, username=admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogoutTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testscripts.smoke.ValidateLogoutHybrid@2cb4893b]" started-at="2023-08-02T11:48:00 IST" name="teardown" finished-at="2023-08-02T11:48:03 IST" duration-ms="3015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testscripts.smoke.ValidateLogoutHybrid -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
